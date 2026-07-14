@@ -102,7 +102,7 @@ export default function Contact() {
 
               {/* GitHub */}
               <a
-                href="https://github.com/NoorMisba"
+                href="https://github.com/Noor-misba"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-pink-500/20 hover:bg-white/10 transition-all duration-300 cursor-pointer"
@@ -112,7 +112,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 font-inter">GitHub Workspace</p>
-                  <p className="text-sm font-semibold font-outfit text-white">github.com/NoorMisba</p>
+                  <p className="text-sm font-semibold font-outfit text-white">github.com/Noor-misba</p>
                 </div>
               </a>
             </div>

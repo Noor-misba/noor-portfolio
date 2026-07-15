@@ -32,21 +32,20 @@ const certifications = [
 
 export default function Resume() {
   const handleDownload = () => {
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.65 },
-      colors: ['#3b82f6', '#8b5cf6', '#ec4899']
-    });
+  confetti({
+    particleCount: 150,
+    spread: 80,
+    origin: { y: 0.65 },
+    colors: ["#3b82f6", "#8b5cf6", "#ec4899"],
+  });
 
-    const link = document.createElement('a');
-    link.href = '/Resume.pdf';
-    link.download = 'Noor_Misba_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}Resume.pdf`;
+  link.download = "Noor_Misba_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   return (
     <section id="resume" className="py-24 relative overflow-hidden grid-bg">
       <div className="absolute top-10 right-10 w-96 h-96 rounded-full bg-purple-600/5 blur-3xl pointer-events-none glow-orb" />

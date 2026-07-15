@@ -155,11 +155,12 @@ export default function Hero() {
             
             {/* Glassmorphic border container */}
             <div className="w-full h-full rounded-2xl p-3 glass-card flex items-center justify-center border border-white/10 shadow-2xl relative overflow-hidden group">
-              <img 
-                src="/profile.jpg" 
-                alt="Noor Misba Profile" 
-                className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 ease-out"
-              />
+              <img
+            src={`${import.meta.env.BASE_URL}profile.jpg`}
+            alt="Noor Misba Profile"
+            className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 ease-out"
+            />
+            
               
               {/* Interactive neural network overlays (visual effect) */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 pointer-events-none" />
